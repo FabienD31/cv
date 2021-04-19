@@ -4,6 +4,7 @@
 @import "animations";
 @import "media_queries";
 @import "carousel";
+@import "skills";
 
 .grid-container {
   display: grid;
@@ -104,14 +105,54 @@ aside {
       font-style: italic;
     }
   }
+  .icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.9em;
+  }
+  img {
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+  .title-small {
+    display: flex;
+    justify-content: center;
+  }
+  .hobbies {
+    display: flex;
+    justify-content: center;
+  }
+  .hobbies img {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    &:hover {
+      transform: scale(1.5);
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
   @include xs {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     h2 {
       font-size: 3rem !important;
     }
     border: 0;
+    img {
+      width: 10rem;
+      height: 10rem;
+      margin-top: 2rem;
+    }
+    .text {
+      display: none;
+    }
   }
 }
 main {

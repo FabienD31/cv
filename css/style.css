@@ -63,7 +63,7 @@ main {
     height: 3px;
     background-color: var(--light); }
 
-img {
+.profil {
   filter: grayscale(100%); }
 
 .work {
@@ -151,6 +151,31 @@ img {
   background-size: cover;
   background-position: top center; }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5rem; }
+  .skills .liwrap {
+    border-radius: 20%;
+    width: 10rem;
+    height: 10rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem; }
+  .skills .img-skills {
+    width: auto;
+    border-radius: 0;
+    margin-top: 2rem;
+    margin-right: 0; }
+  .skills .sass {
+    width: 7rem; }
+  .skills .text-hint {
+    color: var(--hint); }
+
 .grid-container {
   display: grid;
   min-height: 100vh;
@@ -228,14 +253,46 @@ aside {
     aside .block p {
       margin: 0 0 2rem 0;
       font-style: italic; }
+  aside .icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.9em; }
+  aside img {
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 50%;
+    margin-right: 0.5em; }
+  aside .title-small {
+    display: flex;
+    justify-content: center; }
+  aside .hobbies {
+    display: flex;
+    justify-content: center; }
+  aside .hobbies img {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem; }
+    aside .hobbies img:hover {
+      transform: scale(1.5);
+      margin-top: 3rem;
+      margin-bottom: 2rem; }
   @media (max-width: 480px) {
     aside {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
       border: 0; }
       aside h2 {
-        font-size: 3rem !important; } }
+        font-size: 3rem !important; }
+      aside img {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 2rem; }
+      aside .text {
+        display: none; } }
 
 main {
   grid-area: main;
