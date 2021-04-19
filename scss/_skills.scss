@@ -27,4 +27,10 @@
   & .text-hint {
     color: var(--hint);
   }
+  @include xs {
+    .img-skills {
+      width: 7rem;
+      height: 5rem;
+    }
+  }
 }

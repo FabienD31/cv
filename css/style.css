@@ -69,6 +69,9 @@ main {
 .work {
   color: var(--hint); }
 
+h4 {
+  color: var(--h4-color); }
+
 @keyframes bounce {
   0% {
     transform: rotate(-45deg); }
@@ -175,6 +178,10 @@ main {
     width: 7rem; }
   .skills .text-hint {
     color: var(--hint); }
+  @media (max-width: 480px) {
+    .skills .img-skills {
+      width: 7rem;
+      height: 5rem; } }
 
 .grid-container {
   display: grid;
@@ -230,7 +237,7 @@ header {
     border-radius: 50%; }
   @media (max-width: 480px) {
     .picture {
-      padding: 1rem;
+      padding: 0rem;
       display: flex;
       justify-content: center;
       align-content: center;
@@ -280,6 +287,7 @@ aside {
       margin-bottom: 2rem; }
   @media (max-width: 480px) {
     aside {
+      padding: 0;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -287,12 +295,16 @@ aside {
       border: 0; }
       aside h2 {
         font-size: 3rem !important; }
+      aside .icon {
+        justify-content: center; }
       aside img {
         width: 10rem;
         height: 10rem;
         margin-top: 2rem; }
       aside .text {
-        display: none; } }
+        display: none; }
+      aside .block {
+        padding: 1rem; } }
 
 main {
   grid-area: main;

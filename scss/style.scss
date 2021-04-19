@@ -76,7 +76,7 @@ header {
     border-radius: 50%;
   }
   @include xs {
-    padding: 1rem;
+    padding: 0rem;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -137,6 +137,7 @@ aside {
     }
   }
   @include xs {
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -145,6 +146,9 @@ aside {
       font-size: 3rem !important;
     }
     border: 0;
+    .icon {
+      justify-content: center;
+    }
     img {
       width: 10rem;
       height: 10rem;
@@ -152,6 +156,9 @@ aside {
     }
     .text {
       display: none;
+    }
+    .block {
+      padding:1rem;
     }
   }
 }
