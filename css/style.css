@@ -179,6 +179,8 @@ h4 {
   .skills .text-hint {
     color: var(--hint); }
   @media (max-width: 480px) {
+    .skills .skills {
+      width: 20%; }
     .skills .img-skills {
       width: 7rem;
       height: 5rem; } }
@@ -356,6 +358,4 @@ footer {
   background: linear-gradient(to top, var(--primary), var(--light)); }
   @media (max-width: 480px) {
     footer {
-      padding: 3rem 1.5rem; } }
-  footer h2 {
-    margin-bottom: 3rem; }
+      display: none; } }

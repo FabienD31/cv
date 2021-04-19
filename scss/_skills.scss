@@ -28,6 +28,9 @@
     color: var(--hint);
   }
   @include xs {
+    .skills {
+      width: 20%;
+    }
     .img-skills {
       width: 7rem;
       height: 5rem;

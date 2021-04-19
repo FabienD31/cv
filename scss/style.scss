@@ -158,7 +158,7 @@ aside {
       display: none;
     }
     .block {
-      padding:1rem;
+      padding: 1rem;
     }
   }
 }
@@ -222,9 +222,6 @@ footer {
   padding-top: 1rem;
   background: linear-gradient(to top, var(--primary), var(--light));
   @include xs {
-    padding: 3rem 1.5rem;
-  }
-  h2 {
-    margin-bottom: 3rem;
+    display: none;
   }
 }
