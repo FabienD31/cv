@@ -1,7 +1,7 @@
 # cv
 
 ## installation sass et node module
-git i
+npm i
 
 ## lancer sass
 npm run sass
