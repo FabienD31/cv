@@ -1,0 +1,28 @@
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+.title {
+  &-small {
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: var(--light);
+    }
+  }
+}
+img {
+  filter: grayscale(100%);
+}
+
+.work {
+  color: var(--hint);
+}
