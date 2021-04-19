@@ -6,3 +6,5 @@ npm i
 ## lancer sass
 npm run sass
 
+## visualiser: https://fabiend31.github.io/cv/ 
+
