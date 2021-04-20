@@ -18,7 +18,6 @@
   cursor: pointer;
   transition: 450ms all;
   transform-origin: center left;
-
 }
 .carousel__item:hover ~ .carousel__item {
   transform: translate3d(60px, 0, 0);
